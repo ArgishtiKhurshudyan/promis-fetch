@@ -21,3 +21,17 @@ function getData(data) {
       root.appendChild(div1);
     }
   }
+
+  
+let filterInput = document.querySelector("#inputSearch");
+filterInput.addEventListener("keyup", function filterNames() {
+  let filterValue = document.querySelector("#inputSearch").value;
+  let items = document.querySelectorAll(".div-img");
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].textContent.indexOf(filterValue) > -1) {
+      items[i].style.display = "";
+    } else {
+      items[i].style.display = "none";
+    }
+  }
+});
