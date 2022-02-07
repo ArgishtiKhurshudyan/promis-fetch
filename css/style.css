@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: blueviolet;
+  background-color: pink;
 }
 
 .root {
@@ -26,4 +26,11 @@ body {
 .div-img img {
   width: 320px;
   height: 160px;
+}
+
+input {
+  width: 178px;
+    height: 33px;
+    /* margin: 0 auto; */
+    margin-left: 43%;
 }
